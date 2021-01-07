@@ -1,0 +1,31 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\StrayPyramid\Desktop\WORKSPACE\Verilog\ComputerSystem.qsys --synthesis=VERILOG --output-directory=C:\Users\StrayPyramid\Desktop\WORKSPACE\Verilog\ComputerSystem\synthesis --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading Verilog/ComputerSystem.qsys
+Progress: Reading input file
+Progress: Adding Coefficents_FIFO_A2F [altera_avalon_fifo 19.1]
+Progress: Parameterizing module Coefficents_FIFO_A2F
+Progress: Adding Ethernet_FIFO__F2A [altera_avalon_fifo 19.1]
+Progress: Parameterizing module Ethernet_FIFO__F2A
+Progress: Adding Output_Enable [altera_avalon_pio 19.1]
+Progress: Parameterizing module Output_Enable
+Progress: Adding audio_pll_0 [altera_up_avalon_audio_pll 18.0]
+Progress: Parameterizing module audio_pll_0
+Progress: Adding clk_0 [clock_source 19.1]
+Progress: Parameterizing module clk_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 19.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding hps [altera_hps 19.1]
+Progress: Parameterizing module hps
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ComputerSystem.hps: HPS Main PLL counter settings: n = 0  m = 73
+Info: ComputerSystem.hps: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: ComputerSystem.hps: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: ComputerSystem.hps: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: ComputerSystem.hps: set_interface_assignment: Interface "hps_io" does not exist
+Info: ComputerSystem: Generating ComputerSystem "ComputerSystem" for QUARTUS_SYNTH
+Info: ComputerSystem: Done "ComputerSystem" with 1 modules, 0 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
