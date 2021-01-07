@@ -14,13 +14,17 @@ in a way that makes it controllable from anywhere.
 
 The audio mixing itself is done by the DE0-SoC-Nano development board, which supports the Cyclone V.
 This chip is a combination of both an FPGA and a ARM Cortex A9 processor. The FPGA is used for lower 
-level tasks like audio mixing and gain control, while the processor is used for higher level tasks, 
-such as running Linux, supporting a TCP/IP stack for transfering audio over the internet, and for 
-controlling the state of the FPGA with commands sent by the C# GUI.
+level tasks such as audio mixing and gain control, while the processor is used for higher level tasks, 
+such as running Linux, supporting a TCP/IP stack for transfering audio and accepting commands over the internet, 
+and for controlling the state of the FPGA with commands sent by the C# GUI.
+
+The final design also includes an Espressif ESP32, supporting a Bluetooth stack. This Bluetooth interface would 
+be used to recieve and transmit audio, as well as accept commands to the audio mixer from any device connected via Bluetooth over serial.
 
 ![Prototype Mixer Board](protoboard.jpg)
 
-A prototype audio mixing board was design and produced to test the core components of the audio mixer. The PCB shown above 
-supports two 3.5mm audio input jacks, two 3.5mm audio output jacks, and a set of headers to connect the FPGA development board.
+A prototype audio mixing board was designed and produced to test the core components of the audio mixer. The PCB shown above 
+supports two 3.5mm audio input jacks, two 3.5mm audio output jacks, and a set of headers to connect the FPGA development board, 
+as well as provide debugging slots to connect an oscilloscope or digital logic analyzer.
 
 Unfortunately due to running out of time and budget, the final board was never manufactured.
